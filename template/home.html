@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gaga portals</title>
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- <script src="{% static  'js/react.development.js' %}"></script>
+		<script src="{% static 'js/react-dom.development.js' %}"></script> -->
+		<link rel="stylesheet" href="{% static 'css/reset.min.css' %}">
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	</head>
+	<body>
+		<section id="chatApp" class="chatApp">
+			<div class="chatApp__loaderWrapper">
+				<div class="chatApp__conv">
+					<div class="chatApp__convTitle">Gaga</div>
+					<div class="chatApp__convTimeline"></div>
+					<div class="chatApp__convSendMessage clearfix">
+						<div class="chatApp__convTyping"></div>
+						<form>
+							<input value="Shun" type="hidden">
+							<input value="https://i.imgur.com/6rlfZY0.png" type="hidden">
+							<input class="chatApp__convInput" placeholder="Text message" tabindex="0" type="text">
+							<div class="chatApp__convButton "><i class="material-icons">send</i></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		<script  src="{% static '/js/index.js' %}"></script>
+	</body>
+</html>
